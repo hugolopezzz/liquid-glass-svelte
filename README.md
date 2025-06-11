@@ -40,3 +40,13 @@ npm i liquid-glass-svelte
     }}
 ></LiquidGlass>
 ```
+
+![Explanation](./explanation.png)
+
+---
+
+Since there is `...rest`, you can use classes.
+
+```svelte
+<LiquidGlass class="hero">
+</LiquidGlass>
