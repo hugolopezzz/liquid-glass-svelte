@@ -2,9 +2,7 @@
 
 ![Banner](./banner.png)
 
-This svelte component is inspired by Apple's Liquid Glass UI.
-
-This package will make it able to implement it.
+`liquid-glass-svelte` provides a Svelte component that reproduces Apple's Liquid Glass effect.
 
 ## Installation
 
@@ -13,9 +11,10 @@ npm i liquid-glass-svelte
 ```
 
 ## How to Use
+
 ```svelte
 <script lang="ts">
-    import { LiquidGlass } from "liquid-glass";
+    import { LiquidGlass } from "liquid-glass-svelte";
 </script>
 
 <LiquidGlass>
@@ -25,28 +24,34 @@ npm i liquid-glass-svelte
 
 ## Customization
 
+Pass a partial `options` object to tune the effect. Any field you omit falls back to its default value.
+
 ```svelte
 <LiquidGlass
     options={{
-        mainBlur,
-        mainBackgroundColor,
-        edgeBlur,
-        edgeBackgroundColor,
-        edgeWidth,
-        edgeGradientWidth,
-        sheenBlur,
-        sheenBackgroundColor,
-        sheenWidth
+        mainBackgroundColor: 'hsla(0, 0%, 75%, 0.1)',
+        mainBlur: '1vw',
+        edgeBlur: '0.5vw',
+        edgeBackgroundColor: 'hsla(0, 0%, 100%, 0.1)',
+        edgeWidth: '1vw',
+        edgeGradientWidth: '1vw',
+        sheenBlur: '3vw',
+        sheenBackgroundColor: 'hsla(0, 0%, 100%, 0.2)',
+        sheenWidth: '0.2vw'
     }}
-></LiquidGlass>
+>
+    <p>Your content</p>
+</LiquidGlass>
 ```
 
 ![Explanation](./explanation.png)
 
 ---
 
-Since there is `...rest`, you can use classes.
+Since the component forwards additional attributes (`...rest`), you can attach classes or other props:
 
 ```svelte
 <LiquidGlass class="hero">
+    <!-- content -->
 </LiquidGlass>
+```
