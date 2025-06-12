@@ -9,12 +9,8 @@
 	/>
 	<LiquidGlass
 		options={{
-			sheenBackgroundColor: 'hsla(0, 0%, 100%, 0.25)',
-			edgeBackgroundColor: 'hsla(0, 0%, 100%, 0.05)',
-			edgeBlur: '1vw',
-			mainBlur: '0.1vw',
-			edgeWidth: '0.5vw',
-			edgeGradientWidth: '2vw'
+			edgeBlur: '0.1vw',
+			mainBlur: '1vw'
 		}}
 		class="text"
 	>
