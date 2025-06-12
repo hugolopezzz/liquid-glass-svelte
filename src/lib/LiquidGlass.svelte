@@ -140,6 +140,11 @@
 
 		background-color: var(--main-background-color);
 
+		& *,
+		& *::before {
+			border-radius: inherit;
+		}
+
 		:global(.glass-sheen > *) {
 			position: relative;
 			z-index: 1;

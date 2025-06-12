@@ -1,6 +1,6 @@
 {
 	"name": "liquid-glass-svelte",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"description": "A Svelte component for creating a liquid glass element.",
 	"license": "MIT",
 	"scripts": {
